@@ -9,6 +9,7 @@ import (
 func main() {
 	r := gee.New()
 	r.GET("/", func(w http.ResponseWriter, req *http.Request) {
+		fmt.Println("111")
 		fmt.Fprintf(w, "URL.Path = %q\n", req.URL.Path)
 	})
 
